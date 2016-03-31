@@ -13,7 +13,13 @@ attribute :bind, :kind_of => String, :default => nil
 attribute :mode, :kind_of => String, :default => nil,
   :equal_to => ['http', 'tcp', 'health', nil]
 
+attribute :maxconn, :kind_of => Integer, :default => nil
+
 #I can't think of all parameters available in the future so we allow
 #arbitrary params. Type can be array or hash because some attributes
 #(like server) can set several times
 attribute :params, :kind_of => [Array, Hash], :default => []
+
+attribute :options, :kind_of => Array, :default => []
+
+attribute :stats, :kind_of => Array, :default => []
