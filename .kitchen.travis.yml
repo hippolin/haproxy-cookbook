@@ -1,0 +1,4 @@
+---
+driver:
+  name: docker
+  require_chef_omnibus: "<%= ENV['CHEF_VERSION'] || 'latest' %>"

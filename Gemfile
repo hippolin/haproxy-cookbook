@@ -7,4 +7,6 @@ group :test do
   gem 'test-kitchen'
   gem 'kitchen-vagrant'
   gem 'librarian-chef'
+  gem 'docker'
+  gem 'kitchen-docker'
 end
